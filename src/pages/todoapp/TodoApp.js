@@ -42,7 +42,8 @@ export const TodoApp = () => {
 
       <div className='row'>
         <div className='col-7'>
-          <TodoList todos={todos} handleDeleteTodo = {handleDeleteTodo} handleToggleTodo = {handleToggleTodo} />
+          <TodoList todos={todos} dispatch = {dispatch} 
+          handleDeleteTodo={handleDeleteTodo} handleToggleTodo={handleToggleTodo}/>
         </div>
         <div className='col-5'>
           <TodoAdd handleAddTodo={handleAddTodo} />
